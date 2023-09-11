@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+  
+  body {
+    background: #c2c0c0;
+  }
+
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+    width: 400px;
+    background-color: #c2c0c0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input, textarea {
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+  }
+
+  input:focus, textarea:focus {
+    background-color: #c2c0c0;
+  }
+
+  button {
+    padding: 10px 20px;
+    color: #c2c0c0;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+
+  .mensagem {
+    position: fixed;
+    bottom: 0;
+    background-color:blue;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  .mensagem.sucesso {
+    background-color: #329542;
+  }
+
+  .mensagem.erro {
+    background-color: #ff2400;
+  }
+
+  .voltar {
+    background-color: #ffd200;
+    border: none;
+    padding: 15px;
+    width: 10%;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+ 
+    

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login-container.css">
+    <link rel="stylesheet" href="./css/form-container.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/form-title.css">
+    <link rel="stylesheet" href="./css/form-social.css">
+    <link rel="stylesheet" href="./css/social-icon.css">
+    <link rel="stylesheet" href="./css/form-input-container.css">
+    <link rel="stylesheet" href="./css/form-input.css">
+    <link rel="stylesheet" href="./css/form-button.css">
+    <link rel="stylesheet" href="./css/overlay-container.css">
+    <link rel="stylesheet" href="./css/overlay.css">
+    <link rel="stylesheet" href="./css/mobile-text.css">
+
+    <style>
+        :root{
+    --primary-color: #030303;
+    --secundary-color: #ecec0e;
+    --text-color-dark: #f4f4f5;
+    --text-color-light: #ffffff;
+    --icon-color: #ffffff;
+}
+
+.form-title{
+    font-size: 2rem;
+    font-weight: 400;
+}
+    </style>
+
+    <script src="./js/login.js" defer></script>
+    <title>Login - Leonid</title>
+</head>
+<body>
+    <main>
+        <!--Parte para entrar como freelancer-->
+        <div class="login-container" id="login-container">
+            <div class="form-container">
+                <form class="form form-login">
+                    <h6 class="form-title">Entrar como Freelancer</h6>
+                    <p class="form-text">ou utilize sua conta</p>
+                    <a  href="../LoginFree/login.php" ><button type="button" class="form-button">Logar</button></a>
+                    <a  href="../LoginFree/tela_de_cadastro.php" ><button type="button" class="form-button">Cadastrar</button></a>
+                    <p class="mobile-text">
+                        Entre como Contratante!
+                        <a href="#" id="open-register-mobile">Registre-se</a>
+                    </p>
+                </form>
+                <!--Parte para entrar como contratante-->
+                <form class="form form-register">
+                    <h2 class="form-title">Entre como Contratante</h2>
+                    <p class="form-text">ou Cadastre-se</p>
+                    <a  href="../LoginFornecedor/loginFornecedor.php" ><button type="button" class="form-button">Logar</button></a>
+                    <a  href="../LoginFornecedor/tela_de_cadastro_fornecedor.php" ><button type="button" class="form-button">Cadastrar</button></a>
+                    <p class="mobile-text">
+                        Entre como freelancer!
+                        <a href="#" id="open-login-mobile">Login</a>
+                    </p>
+                </form>
+            </div>
+            <!-- 2 Parte do código onde é realizada a transição-->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <h2 class="form-title form-title-light">Entre como freelancer</h2>
+                    <p class="form-text">Seja um freelancer jovem com a gente!</p>
+                    <button class="form-button form-button-light" id="open-login">Entrar</button>
+                </div>
+                <!-- 3 Parte do código onde é realizada outra transição-->
+                <div class="overlay">
+                    <h2 class="form-title form-title-light">Entre como Contratante</h2>
+                    <p class="form-text">Precisa de um serviço, agora é o momento!</p>
+                    <button class="form-button form-button-light" id="open-register">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

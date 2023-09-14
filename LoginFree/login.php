@@ -62,7 +62,7 @@
     </head>
     <body>
         <!--Butão simples para voltar para apágina inicial-->
-        <a href="../inicial/index.html"><button class="voltar">Voltar</button></a>
+        <a href="../index.html"><button class="voltar">Voltar</button></a>
         <div>
             <h1>Login Freelancer</h1>
 

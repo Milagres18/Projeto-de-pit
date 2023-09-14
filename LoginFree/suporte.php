@@ -47,7 +47,7 @@ if (isset($_POST["nome"], $_POST["email"],$_POST["msg"])){
   </head>
   <body>
 
-  <a href="index.html"><button class="voltar">Voltar</button></a>
+  <a href="../index.html"><button class="voltar">Voltar</button></a>
     
     <main>
       <form method="POST">

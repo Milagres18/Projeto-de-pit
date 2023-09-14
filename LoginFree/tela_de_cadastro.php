@@ -142,7 +142,7 @@
     </head>
     <body>
 
-        <a href="../inicial/index.html"><button class="voltar">Voltar</button></a>
+        <a href="../index.html"><button class="voltar">Voltar</button></a>
 
         <div class="box">
             <form action="tela_de_cadastro.php" method="POST">

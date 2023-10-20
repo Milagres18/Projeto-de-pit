@@ -88,7 +88,7 @@
           <ul class="nav nav-pills nav-stacked">
             <li class="active"><a href="#"> <i class="fa fa-user"></i> Perfil</a></li>
             <li><a href="#"> <i class="fa fa-calendar"></i> Atividade Recente</a></li>
-            <li><a href="#"> <i class="fa fa-edit"></i> Editar Perfil</a></li>
+            <li><a href="edita_contratante.php"> <i class="fa fa-edit"></i> Editar Perfil</a></li>
           </ul>
         </div>
       </div>

@@ -13,11 +13,13 @@
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
         header('Location: login.php');
-    } else {
-        unset($_SESSION['msg']);
-    }
-    
+    } 
+    $logado = $_SESSION['email'];
 
+    $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+    $result_usuario = "SELECT * FROM usuarios WHERE id = '5'";
+    $resultado_usuario = mysqli_query($conexao, $result_usuario);
+    $row_usuario = mysqli_fetch_assoc($resultado_usuario);
 ?>
 
 
@@ -61,7 +63,7 @@
               </li>
               
               <li class="nav-item">
-                <a href="" class="nav-link">Encontrar Trabalho</a>
+                <a href="Serviço.html" class="nav-link">Encontrar Trabalho</a>
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link">Como Funciona?</a>
@@ -85,9 +87,14 @@
                     <div class="profile-picture-bg"></div>
                     <img src="img/minhaFT.png.jpg" alt="Foto de Perfil">
                 </div>
-                <h1>Carlos Gabriel</h1>
+                <tbody><?php 
+                /*while($user_data = mysqli_fetch_assoc($result)) 
+                { 
+                  echo "<tr>";
+                  echo "<td>".$user_data['nome']."<td/>";
+                */echo $row_usuario['nome']; ?></tbody>
                 <p>Belo Horizonte, Brasil</p>
-                <button id="friend-button">Convidar</button>
+                <a class='btn btn-sm btn-primary' href='editar.php'>Alterar</a>
             </div>
         </div>
         <div class="posts">
